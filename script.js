@@ -60,8 +60,11 @@ const addTask = () => {
     inputField.value = ""
 
     //Skapar en eventlistner som verkar vara en funtion som aktiveras när du klickar "click"
-    deleteBtn.addEventListener("click", () => {
+    /* deleteBtn.addEventListener("click", () => {
         listItem.remove()
-    })
-
+    }) */
+    //Alternativ att ta bortknappen
+    deleteBtn.onclick = () => {
+        taskList.removeChild(listItem)
+    }
 }
