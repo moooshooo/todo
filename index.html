@@ -6,20 +6,33 @@
     <title>Mos To-Do</title>
 
     <link href="style.css" rel="stylesheet" />
-   
-
   </head>
   <body>
-    <div class="container">
-      <h1>Mos To-Do Lista</h1>
+    <header>
+      <div id="container">
 
-      <div class="input-section">
-        <input type="text" placeholder="Vad vill du göra?" id="inputField" />
-        <button onclick="addTask()" class="addBtn">Lägg till</button>
+        <h1>Mos To-Do Lista</h1>
+  
+        <div class="input-section">
+          <input type="text" placeholder="Vad vill du göra?" id="inputField" />
+          <button onclick="addTask()" class="addBtn">Lägg till</button>
+        </div>
+  
+        <ul id="taskList"></ul>
       </div>
 
-      <ul id="taskList"></ul>
-    </div>
-     <script src="script.js"></script>
+    </header>
+    <footer id="footer">
+      
+      <br />
+      <br />
+      <p id="copyright">
+        Powered - by <a href="http://www.moshos.se/" target="_blank">Mos</a>
+        <br />
+        Version 0.1 <br />
+        <span id="lastUpdated"></span><br />
+      </p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
